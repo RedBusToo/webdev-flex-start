@@ -3,6 +3,9 @@ body{
     font-family: helvetica, arial, sans-serif;
 	font-size:1em;
 }
+#logo h1 a{
+    color: black;
+}
 .container{
     width:100%;	
     margin:auto;
@@ -12,13 +15,18 @@ body{
 h1, h2{
     font-family: 'Raleway', sans-serif;
 }
-nav ul li{	
-    display:inline;
+nav ul li a{	
+    color: white;
 }
-
-nav ul{
-    padding-left:0;
-    list-style-type: style inline;	
+nav ul li{	
+    text-decoration: wavy;
+    display:inline;
+    padding-left:10px;
+    padding-right:10px;
+    border-left:1px solid #7E8AA2;
+}
+nav li:first-child{
+    border-left:none;	
 }
 header{
     background-color: #263248;	
@@ -40,4 +48,29 @@ main{
     border:1px solid #ccc;
     border-radius:8px;
     margin-top: 70px;
+    flex:0 0 200px;
  }
+ footer{
+    border-top:1px solid #ccc;
+    margin:20px 10px 10px 0;
+    font-size:0.8em;
+    text-align:center;
+    font-style:italic;
+}
+table{
+    width:100%;
+    max-width: 600px;
+    min-width: 300px;
+}
+th, td{
+    padding: 10px 4px;
+    text-align: left;	
+}	
+th{
+    text-transform: uppercase;
+    border-bottom: 4px solid #000;	
+    background-color: #fff;	
+}
+tr:nth-child(odd){
+    background-color: #ccc;	
+}
